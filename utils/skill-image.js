@@ -83,7 +83,7 @@ import fastapi from "../app/assets/svg/skills/fastapi.svg";
 import jenkins from "../app/assets/svg/skills/Jenkins.svg";
 import terraform from "../app/assets/svg/skills/Terraform.svg";
 import cicd from "../app/assets/svg/skills/CICD.svg";
-import GithubActions from "../app/assets/svg/skills/GithubActions.svg";
+import githubActions from "../app/assets/svg/skills/githubActions.svg";
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -258,8 +258,8 @@ export const skillsImage = (skill) => {
       return terraform;
     case "cicd":
       return cicd;
-    case "Github actions":
-      return GithubActions;
+    case "github actions":
+      return githubActions;
     default:
       break;
   }
