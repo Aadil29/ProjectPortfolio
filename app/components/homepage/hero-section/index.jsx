@@ -10,7 +10,7 @@ function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center py-8 lg:py-16 min-h-screen">
       <Image
-        src="/hero.svg"
+        src="./hero.svg"
         alt="Hero background"
         width={1572}
         height={795}
