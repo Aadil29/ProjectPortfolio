@@ -51,53 +51,17 @@ export const projectImages = {
         "Video walkthrough showcasing the deepfake detection dashboard, including audio upload, analysis, and real-time classification of bona fide or spoofed audio files.",
     },
   ],
-  2: [
-    // MNIST Neural Network
-    {
-      src: "./ProjectPics/MNSIT/ClassDefinition.png",
-      alt: "Neural Network Class Definition",
-      caption:
-        "Visual representation of the Neural Network class definition, outlining the architecture and key methods like initialization, activation functions (ReLU, Softmax), and loss calculation.",
-    },
-    {
-      src: "./ProjectPics/MNSIT/FowardPass.png",
-      alt: "Neural Network Forward Pass",
-      caption:
-        "Illustration of the forward pass operation within the Neural Network, showing how input data propagates through layers to produce output predictions.",
-    },
-    {
-      src: "./ProjectPics/MNSIT/BackPass.png",
-      alt: "Neural Network Backward Pass",
-      caption:
-        "Depiction of the backward pass (backpropagation) algorithm, demonstrating how errors are propagated back through the network to update weights and biases.",
-    },
-    {
-      src: "./ProjectPics/MNSIT/TrainingAndTestRun.png",
-      alt: "Neural Network Training and Test Evaluation Code",
-      caption:
-        "Code snippet demonstrating the initialization of the Neural Network, the training process with specified hyperparameters (epochs, batch size, dropout, regularization), and the final evaluation on the unseen test dataset to report loss and accuracy.",
-    },
-  ],
 
-  3: [
-    // MNIST Neural Network
-    {
-      src: "./ProjectPics/IntroAI/ModelComparison.png",
-      alt: "Model Comparison",
-      caption:
-        "Visual representation comparing different AI/ML models, highlighting their architectures, strengths, and weaknesses.",
-    },
-  ],
   5: [
     // EV Charging Station App
     {
-      src: "../ProjectPics/EVchargingStation/ChargerAvailabilityCalendar.jpg",
+      src: "/ProjectPics/EVchargingStation/ChargerAvailabilityCalendar.jpg",
       alt: "Charger Availability Calendar View",
       caption:
         "The charger availability screen displaying a calendar for date selection (e.g., January 8, 2025) and available time slots for booking chargers at a station.",
     },
     {
-      src: "../ProjectPics/EVchargingStation/BookingReservationTimeSlots.jpg",
+      src: "/ProjectPics/EVchargingStation/BookingReservationTimeSlots.jpg",
       alt: "Booking Reservation with Time Slot Selection",
       caption:
         "The booking reservation interface where users select a date, a specific charger (e.g., 'Charger charger2'), and view available time slots for their charging session.",
@@ -142,6 +106,44 @@ export const projectImages = {
       src: "/ProjectPics/EVchargingStation/Payments.jpg",
     },
   ],
+  2: [
+    // MNIST Neural Network
+    {
+      src: "./ProjectPics/MNSIT/ClassDefinition.png",
+      alt: "Neural Network Class Definition",
+      caption:
+        "Visual representation of the Neural Network class definition, outlining the architecture and key methods like initialization, activation functions (ReLU, Softmax), and loss calculation.",
+    },
+    {
+      src: "./ProjectPics/MNSIT/FowardPass.png",
+      alt: "Neural Network Forward Pass",
+      caption:
+        "Illustration of the forward pass operation within the Neural Network, showing how input data propagates through layers to produce output predictions.",
+    },
+    {
+      src: "./ProjectPics/MNSIT/BackPass.png",
+      alt: "Neural Network Backward Pass",
+      caption:
+        "Depiction of the backward pass (backpropagation) algorithm, demonstrating how errors are propagated back through the network to update weights and biases.",
+    },
+    {
+      src: "./ProjectPics/MNSIT/TrainingAndTestRun.png",
+      alt: "Neural Network Training and Test Evaluation Code",
+      caption:
+        "Code snippet demonstrating the initialization of the Neural Network, the training process with specified hyperparameters (epochs, batch size, dropout, regularization), and the final evaluation on the unseen test dataset to report loss and accuracy.",
+    },
+  ],
+
+  3: [
+    // MNIST Neural Network
+    {
+      src: "./ProjectPics/IntroAI/ModelComparison.png",
+      alt: "Model Comparison",
+      caption:
+        "Visual representation comparing different AI/ML models, highlighting their architectures, strengths, and weaknesses.",
+    },
+  ],
+
   7: [
     // 2D Platform Game with mixed media
     {
