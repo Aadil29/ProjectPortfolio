@@ -10,7 +10,6 @@ import {
   Play,
   Pause,
 } from "lucide-react";
-import { isVideo } from "./utils"; // Assuming this utility function exists and correctly identifies video files
 
 // Get the public base path. This needs to be imported here to be used in the component.
 // It will be '/ProjectPortfolio' in production on GitHub Pages, and '' in local development.
@@ -21,24 +20,10 @@ function MediaViewer({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [modalImageIndex, setModalImageIndex] = React.useState(0);
-  const [isVideoPlaying, setIsVideoPlaying] = React.useState(false);
-  const [isModalVideoPlaying, setIsModalVideoPlaying] = React.useState(false);
-
-  const videoRef = React.useRef(null);
-  const modalVideoRef = React.useRef(null);
-
-  // Function to reset video states when changing main image
-  const resetVideoState = (videoElementRef, setIsPlayingState) => {
-    if (videoElementRef.current) {
-      videoElementRef.current.pause();
-      setIsPlayingState(false);
-    }
-  };
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => {
       const nextIdx = prev === images.length - 1 ? 0 : prev + 1;
-      resetVideoState(videoRef, setIsVideoPlaying);
       return nextIdx;
     });
   };
@@ -46,27 +31,22 @@ function MediaViewer({ images }) {
   const prevImage = () => {
     setCurrentImageIndex((prev) => {
       const nextIdx = prev === 0 ? images.length - 1 : prev - 1;
-      resetVideoState(videoRef, setIsVideoPlaying);
       return nextIdx;
     });
   };
 
   const openModal = (index) => {
-    resetVideoState(videoRef, setIsVideoPlaying); // Pause main video if playing
     setModalImageIndex(index);
     setIsModalOpen(true);
-    setIsModalVideoPlaying(false); // Ensure modal video starts paused
   };
 
   const closeModal = () => {
-    resetVideoState(modalVideoRef, setIsModalVideoPlaying); // Pause modal video if playing
     setIsModalOpen(false);
   };
 
   const nextModalImage = () => {
     setModalImageIndex((prev) => {
       const nextIdx = prev === images.length - 1 ? 0 : prev + 1;
-      resetVideoState(modalVideoRef, setIsModalVideoPlaying); // Pause modal video if changing
       return nextIdx;
     });
   };
@@ -74,77 +54,30 @@ function MediaViewer({ images }) {
   const prevModalImage = () => {
     setModalImageIndex((prev) => {
       const nextIdx = prev === 0 ? images.length - 1 : prev - 1;
-      resetVideoState(modalVideoRef, setIsModalVideoPlaying); // Pause modal video if changing
       return nextIdx;
     });
   };
 
-  const renderMedia = (mediaItem, isModal = false) => {
-    const currentVideoRef = isModal ? modalVideoRef : videoRef;
+  const renderImage = (imageItem, isModal = false) => {
     const objectFitClass = "object-contain";
 
-    if (isVideo(mediaItem.src)) {
-      return (
-        <div className="relative w-full h-full">
-          <video
-            ref={currentVideoRef}
-            className={`w-full h-full ${objectFitClass}`}
-            onPlay={() =>
-              isModal ? setIsModalVideoPlaying(true) : setIsVideoPlaying(true)
-            }
-            onPause={() =>
-              isModal ? setIsModalVideoPlaying(false) : setIsVideoPlaying(false)
-            }
-            onEnded={() =>
-              isModal ? setIsModalVideoPlaying(false) : setIsVideoPlaying(false)
-            }
-            controls
-            loop={!isModal} // Loop main viewer video, not modal
-          >
-            {/* IMPORTANT FIX: Prepend BASE_PATH to video src */}
-            <source src={`${BASE_PATH}${mediaItem.src}`} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      );
-    } else {
-      // For images, using a standard <img> tag, so explicitly prepend BASE_PATH
-      // If you were using next/image here, it would generally handle BASE_PATH automatically,
-      // but for consistency with video and robustness, this explicit prefix is fine.
-      return (
-        <img
-          // IMPORTANT FIX: Prepend BASE_PATH to image src
-          src={`${BASE_PATH}${mediaItem.src}`}
-          alt={mediaItem.alt}
-          className={`w-full h-full ${objectFitClass} transition-transform duration-300`}
-        />
-      );
-    }
+    return (
+      <img
+        src={`${BASE_PATH}${imageItem.src}`}
+        alt={imageItem.alt}
+        className={`w-full h-full ${objectFitClass} transition-transform duration-300`}
+      />
+    );
   };
 
-  const renderThumbnail = (mediaItem) => {
-    if (isVideo(mediaItem.src)) {
-      return (
-        <div className="relative w-12 h-8 bg-gray-800 rounded overflow-hidden">
-          {/* IMPORTANT FIX: Prepend BASE_PATH to thumbnail video src */}
-          <video className="w-full h-full object-cover">
-            <source src={`${BASE_PATH}${mediaItem.src}`} type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Play className="w-3 h-3 text-white" />
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <img
-          // IMPORTANT FIX: Prepend BASE_PATH to thumbnail image src
-          src={`${BASE_PATH}${mediaItem.src}`}
-          alt={mediaItem.alt}
-          className="w-12 h-8 object-cover"
-        />
-      );
-    }
+  const renderThumbnail = (imageItem) => {
+    return (
+      <img
+        src={`${BASE_PATH}${imageItem.src}`}
+        alt={imageItem.alt}
+        className="w-12 h-8 object-cover"
+      />
+    );
   };
 
   // If no images are provided, render nothing or a placeholder
@@ -158,14 +91,13 @@ function MediaViewer({ images }) {
         <div className="w-full relative group">
           {/* Fixed height container - change h-64 to your preferred height */}
           <div className="relative overflow-hidden rounded-lg bg-[#1a1443] border border-violet-600/30 h-64 w-full">
-            {renderMedia(images[currentImageIndex])}
+            {renderImage(images[currentImageIndex])}
 
             <button
               onClick={() => openModal(currentImageIndex)}
               className="absolute top-2 right-2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
-              aria-label="Open media in modal"
+              aria-label="Open image in modal"
             >
-              {/* Using a simple full-screen icon for both image and video for consistency */}
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -218,14 +150,13 @@ function MediaViewer({ images }) {
                   key={index}
                   onClick={() => {
                     setCurrentImageIndex(index);
-                    resetVideoState(videoRef, setIsVideoPlaying); // Pause main video if changing via thumbnail
                   }}
                   className={`flex-shrink-0 relative overflow-hidden rounded transition-all duration-200 ${
                     index === currentImageIndex
                       ? "ring-2 ring-[#16f2b3]"
                       : "hover:ring-2 hover:ring-gray-400"
                   }`}
-                  aria-label={`View media ${index + 1}`}
+                  aria-label={`View image ${index + 1}`}
                 >
                   {renderThumbnail(image)}
                   {index === currentImageIndex && (
@@ -238,7 +169,7 @@ function MediaViewer({ images }) {
         </div>
       </div>
 
-      {isModalOpen && ( // Only render modal if there are images
+      {isModalOpen && (
         <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-4">
           <div className="relative max-w-6xl w-full h-full flex flex-col items-center justify-center">
             <button
@@ -250,7 +181,7 @@ function MediaViewer({ images }) {
             </button>
 
             <div className="w-full flex-grow flex items-center justify-center relative bg-gray-900 rounded-lg overflow-hidden">
-              {renderMedia(images[modalImageIndex], true)}
+              {renderImage(images[modalImageIndex], true)}
 
               {images.length > 1 && (
                 <>
