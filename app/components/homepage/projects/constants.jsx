@@ -165,7 +165,7 @@ export const projectImages = {
         "Third level of the 2D platform game, introducing advanced mechanics and obstacles.",
     },
     {
-      src: "./ProjectPics/2DPlatform/GameVideo.webm",
+      src: "./ProjectPics/2DPlatform/Gamevideo.webm",
       alt: "2D Platform Game Video",
       caption:
         "Video showcasing the gameplay mechanics, character movements, and level design of the 2D platform game.",
