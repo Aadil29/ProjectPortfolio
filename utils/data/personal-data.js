@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Aadil Ghani",
-  profile: "/profile.png",
+  profile: "./profile.png",
   designation: "Software Engineer (Cybersecurity & AI/ML) ",
 
   email: "mohammadghani2003@gmail.com",
