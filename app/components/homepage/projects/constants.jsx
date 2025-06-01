@@ -55,55 +55,55 @@ export const projectImages = {
   5: [
     // EV Charging Station App
     {
-      src: "/ProjectPics/EVchargingStation/ChargerAvailabilityCalendar.jpg",
+      src: "./ProjectPics/EVchargingStation/ChargerAvailabilityCalendar.jpg",
       alt: "Charger Availability Calendar View",
       caption:
         "The charger availability screen displaying a calendar for date selection (e.g., January 8, 2025) and available time slots for booking chargers at a station.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/BookingReservationTimeSlots.jpg",
+      src: "./ProjectPics/EVchargingStation/BookingReservationTimeSlots.jpg",
       alt: "Booking Reservation with Time Slot Selection",
       caption:
         "The booking reservation interface where users select a date, a specific charger (e.g., 'Charger charger2'), and view available time slots for their charging session.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/ForgotPasswordScreen.jpg",
+      src: "./ProjectPics/EVchargingStation/ForgotPasswordScreen.jpg",
       alt: "Forgot Password Screen",
       caption:
         "The 'Forgot Your Password?' screen, enabling users to reset their password by entering their registered email address to receive a reset link.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/AnalyticsDashboard.jpg",
+      src: "./ProjectPics/EVchargingStation/AnalyticsDashboard.jpg",
       alt: "Analytics Dashboard with Peak Charging Times and Energy Consumption",
       caption:
         "The Analytics Dashboard providing insights into usage patterns, including a bar chart for peak charging times and a line graph illustrating energy consumption trends.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/ChargingPortDetails.jpg",
+      src: "./ProjectPics/EVchargingStation/ChargingPortDetails.jpg",
       alt: "Charging Port Details Screen",
       caption:
         "The Charging Port Details screen showing the physical location of a charging station (e.g., '29 Sparsholt Road, Barking, United Kingdom') and the number of total bookings for each individual charger.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/MapChargerLocations.jpg",
+      src: "./ProjectPics/EVchargingStation/MapChargerLocations.jpg",
       alt: "Map View of Charger Locations",
       caption:
         "A map interface displaying multiple charger locations (indicated by pins) in a geographical area (e.g., New York), allowing users to visually identify nearby charging stations.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/CreateAccountForm.jpg",
+      src: "./ProjectPics/EVchargingStation/CreateAccountForm.jpg",
       alt: "Create Account Registration Form",
       caption:
         "The 'Create Account' registration form, prompting users to enter their full name, email address, phone number, and desired password to register for the service.",
     },
     {
-      src: "/ProjectPics/EVchargingStation/HomePage.jpg",
+      src: "./ProjectPics/EVchargingStation/HomePage.jpg",
     },
     {
-      src: "/ProjectPics/EVchargingStation/NavBar.jpg",
+      src: "./ProjectPics/EVchargingStation/NavBar.jpg",
     },
     {
-      src: "/ProjectPics/EVchargingStation/Payments.jpg",
+      src: "./ProjectPics/EVchargingStation/Payments.jpg",
     },
   ],
   2: [
