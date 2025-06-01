@@ -102,7 +102,7 @@ function MediaViewer({ images }) {
             loop={!isModal} // Loop main viewer video, not modal
           >
             {/* IMPORTANT FIX: Prepend BASE_PATH to video src */}
-            <source src={`${BASE_PATH}${mediaItem.src}`} type="video/mp4" />
+            <source src={`${BASE_PATH}${mediaItem.src}`} type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -128,7 +128,7 @@ function MediaViewer({ images }) {
         <div className="relative w-12 h-8 bg-gray-800 rounded overflow-hidden">
           {/* IMPORTANT FIX: Prepend BASE_PATH to thumbnail video src */}
           <video className="w-full h-full object-cover">
-            <source src={`${BASE_PATH}${mediaItem.src}`} type="video/mp4" />
+            <source src={`${BASE_PATH}${mediaItem.src}`} type="video/webm" />
           </video>
           <div className="absolute inset-0 flex items-center justify-center">
             <Play className="w-3 h-3 text-white" />
