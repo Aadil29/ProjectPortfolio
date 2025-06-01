@@ -174,7 +174,7 @@ export const projectImages = {
 
   12: [
     {
-      src: "./ProjectPics/LancastersWebsite/VideoWalkthrough.webm",
+      src: "./ProjectPics/LancastersWebsite/Videowalkthrough.webm",
       alt: "Lancaster's Restaurant Video Walkthrough",
       caption:
         "Video walkthrough showcasing the features and functionality of Lancaster's Restaurant reservation system.",
@@ -183,7 +183,7 @@ export const projectImages = {
 
   14: [
     {
-      src: "./ProjectPics/SecurityAudit/JuiceShopVideo.mp4",
+      src: "./ProjectPics/SecurityAudit/Juiceshopvideo.webm",
       alt: "OWASP Juice Shop Security Evaluation Video",
       caption:
         "Video walkthrough showcasing the findings of the 10 challenges from the OWASP Juice Shop security evaluation.",
