@@ -45,7 +45,7 @@ export const projectImages = {
     },
 
     {
-      src: "./ProjectPics/AudioDeepFakeDetection/AudioDeepfakeVideo.mp4",
+      src: "./ProjectPics/AudioDeepFakeDetection/Audiodeepfakevideo.webm",
       alt: "Video demonstration of the Audio Deepfake Detection System in action",
       caption:
         "Video walkthrough showcasing the deepfake detection dashboard, including audio upload, analysis, and real-time classification of bona fide or spoofed audio files.",
