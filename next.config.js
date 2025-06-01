@@ -7,7 +7,7 @@ const nextConfig = {
   // Make sure this matches your GitHub repository name exactly
   ...(process.env.NODE_ENV === "production" &&
     process.env.GITHUB_ACTIONS && {
-      basePath: "/ProjectPortfolio", // Replace with your actual repo name
+      basePath: "/ProjectPortfolio/", // Replace with your actual repo name
     }),
 
   output: "export",
@@ -32,13 +32,6 @@ const nextConfig = {
       },
     ],
   },
-
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-  },
-
-  trailingSlash: true,
-  poweredByHeader: false,
 };
 
 module.exports = nextConfig;
