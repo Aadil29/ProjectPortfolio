@@ -2,25 +2,25 @@ export const projectImages = {
   1: [
     // Audio Deepfake Detection System
     {
-      src: "./ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionDecision.png",
+      src: "../ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionDecision.png",
       alt: "Audio Deepfake Detection Interface showing a .wav file uploaded and detected as BONAFIDE",
       caption:
         "Main detection interface where users can upload a .wav file for deepfake detection. The result for the uploaded file 'LA_E_1001976.wav' is shown as 'BONAFIDE'.",
     },
     {
-      src: "./ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionStats.png",
+      src: "../ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionStats.png",
       alt: "Deepfake Detection Statistics popup showing total uploads, bonafide, and spoof counts",
       caption:
         "Deepfake Detection Statistics panel displaying metrics such as total uploads, and the count of bonafide and spoof detections, all currently at zero.",
     },
     {
-      src: "./ProjectPics/AudioDeepFakeDetection/SignUpFormOtpSentAfterSignUpButton.png",
+      src: "../ProjectPics/AudioDeepFakeDetection/SignUpFormOtpSentAfterSignUpButton.png",
       alt: "Sign Up form with email, password, voice registration completed, and OTP input",
       caption:
         "Sign Up form showing fields for email and password, with voice registration completed. An OTP has been sent to the registered email for verification.",
     },
     {
-      src: "./ProjectPics/AudioDeepFakeDetection/SignInFormPassessAllChecks.png",
+      src: "../ProjectPics/AudioDeepFakeDetection/SignInFormPassessAllChecks.png",
       alt: "Voice Authentication during sign in passing passphrase match, similarity, and deepfake checks",
       caption:
         "Voice Authentication during sign-in, requiring the user to say a specific phrase. The system has successfully matched the passphrase, achieved a high similarity score, and confirmed the audio is not a deepfake.",
