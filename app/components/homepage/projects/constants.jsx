@@ -174,7 +174,7 @@ export const projectImages = {
 
   12: [
     {
-      src: "./ProjectPics/LancastersWebsite/VideoWalkthrough.mp4",
+      src: "./ProjectPics/LancastersWebsite/VideoWalkthrough.webm",
       alt: "Lancaster's Restaurant Video Walkthrough",
       caption:
         "Video walkthrough showcasing the features and functionality of Lancaster's Restaurant reservation system.",
