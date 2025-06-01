@@ -194,143 +194,143 @@ export const projectImages = {
     // AirViva project images
     // Admin Modules
     {
-      src: "/ProjectPics/AirViva/AdminRefundsInitial.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminRefundsInitial.jpg", // Changed to .jpg
       alt: "AirViva Admin - Refunds Initial Screen",
       caption:
         "Initial screen for administrators to manage and process refunds within the AirViva system.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminMainMenu.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminMainMenu.jpg", // Changed to .jpg
       alt: "AirViva Admin Home Page - Main Menu",
       caption:
         "The main menu for AirViva administrators, providing navigation to various management functions.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminBackUp.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminBackUp.jpg", // Changed to .jpg
       alt: "AirViva Admin - Backup Utility",
       caption:
         "Utility for administrators to perform system backups, ensuring data integrity for AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminCommisonRates.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminCommisonRates.jpg", // Changed to .jpg
       alt: "AirViva Admin - Commission Rates Configuration",
       caption:
         "Interface for administrators to configure and adjust commission rates for sales in AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminCreateUserAccount.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminCreateUserAccount.jpg", // Changed to .jpg
       alt: "AirViva Admin - Create User Account",
       caption:
         "Screen allowing administrators to create new user accounts within the AirViva system.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminCustomerDetails.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminCustomerDetails.jpg", // Changed to .jpg
       alt: "AirViva Admin - Customer Details",
       caption: "View and manage detailed information about AirViva customers.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminLogIn.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminLogIn.jpg", // Changed to .jpg
       alt: "AirViva Admin Login Page",
       caption: "Secure login interface for AirViva administrators.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminRestore.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminRestore.jpg", // Changed to .jpg
       alt: "AirViva Admin - Restore Utility",
       caption:
         "Utility for administrators to restore AirViva system data from previous backups.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminStock.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminStock.jpg", // Changed to .jpg
       alt: "AirViva Admin - Stock Management",
       caption:
         "Module for administrators to manage and monitor stock levels within AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminUserDetails.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminUserDetails.jpg", // Changed to .jpg
       alt: "AirViva Admin - User Details Management",
       caption:
         "Detailed management of user information and profiles in AirViva.",
     },
     // Advisor Modules
     {
-      src: "/ProjectPics/AirViva/AdvisorEarnedCommission.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorEarnedCommission.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Earned Commission",
       caption:
         "Initial screen for AirViva advisors to view their earned commissions.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorHomePage.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorHomePage.jpg", // Changed to .jpg
       alt: "AirViva Advisor Home Page",
       caption:
         "The home page for AirViva advisors, providing an overview of their tasks and information.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorLogIn.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorLogIn.jpg", // Changed to .jpg
       alt: "AirViva Advisor Login Page",
       caption: "Login interface for AirViva advisors.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorRefunds.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorRefunds.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Refund Processing",
       caption:
         "Process and manage refunds through the AirViva advisor interface.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorStock.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorStock.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Stock View",
       caption:
         "Advisors' interface to view current stock or inventory status in AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorTicketSales.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorTicketSales.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Ticket Sales",
       caption:
         "Module for AirViva advisors to manage and process ticket sales.",
     },
     // Office Manager Modules
     {
-      src: "/ProjectPics/AirViva/OfficeManagerBlanks.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerBlanks.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Blanks Initial",
       caption:
         "Initial screen for Office Managers to manage ticket blanks or similar inventory.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerDiscountPlan.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerDiscountPlan.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Discount Plan Configuration",
       caption:
         "Interface for Office Managers to configure and manage discount plans for AirViva services.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerDomesticSalesReport.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerDomesticSalesReport.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Domestic Sales Report",
       caption:
         "Comprehensive report showing domestic sales performance for AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerHomePage.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerHomePage.jpg", // Changed to .jpg
       alt: "AirViva Office Manager Home Page",
       caption:
         "The home page for AirViva Office Managers, providing an overview of key operations.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerInterlineSalesReport.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerInterlineSalesReport.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Interline Sales Report",
       caption:
         "Detailed report showing interline sales performance across the AirViva network.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerLogIn.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerLogIn.jpg", // Changed to .jpg
       alt: "AirViva Office Manager Login Page",
       caption: "Login interface for AirViva Office Managers.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerStock.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerStock.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Stock Initial View",
       caption:
         "Initial view for Office Managers to manage inventory and stock for AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerTicketStockTurnoverReport.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerTicketStockTurnoverReport.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Ticket Stock Turnover Report",
       caption:
         "Report detailing the turnover rate of ticket stock for AirViva Office Managers.",
