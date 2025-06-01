@@ -54,25 +54,25 @@ export const projectImages = {
   2: [
     // MNIST Neural Network
     {
-      src: "/ProjectPics/MNSIT/ClassDefinition.png",
+      src: "./ProjectPics/MNSIT/ClassDefinition.png",
       alt: "Neural Network Class Definition",
       caption:
         "Visual representation of the Neural Network class definition, outlining the architecture and key methods like initialization, activation functions (ReLU, Softmax), and loss calculation.",
     },
     {
-      src: "/ProjectPics/MNSIT/FowardPass.png",
+      src: "./ProjectPics/MNSIT/FowardPass.png",
       alt: "Neural Network Forward Pass",
       caption:
         "Illustration of the forward pass operation within the Neural Network, showing how input data propagates through layers to produce output predictions.",
     },
     {
-      src: "/ProjectPics/MNSIT/BackPass.png",
+      src: "./ProjectPics/MNSIT/BackPass.png",
       alt: "Neural Network Backward Pass",
       caption:
         "Depiction of the backward pass (backpropagation) algorithm, demonstrating how errors are propagated back through the network to update weights and biases.",
     },
     {
-      src: "/ProjectPics/MNSIT/TrainingAndTestRun.png",
+      src: "./ProjectPics/MNSIT/TrainingAndTestRun.png",
       alt: "Neural Network Training and Test Evaluation Code",
       caption:
         "Code snippet demonstrating the initialization of the Neural Network, the training process with specified hyperparameters (epochs, batch size, dropout, regularization), and the final evaluation on the unseen test dataset to report loss and accuracy.",
@@ -82,7 +82,7 @@ export const projectImages = {
   3: [
     // MNIST Neural Network
     {
-      src: "/ProjectPics/IntroAI/ModelComparison.png",
+      src: "./ProjectPics/IntroAI/ModelComparison.png",
       alt: "Model Comparison",
       caption:
         "Visual representation comparing different AI/ML models, highlighting their architectures, strengths, and weaknesses.",
@@ -91,61 +91,61 @@ export const projectImages = {
   5: [
     // EV Charging Station App
     {
-      src: "/ProjectPics/EvChargingStation/ChargerAvailabilityCalendar.jpg",
+      src: "./ProjectPics/EvChargingStation/ChargerAvailabilityCalendar.jpg",
       alt: "Charger Availability Calendar View",
       caption:
         "The charger availability screen displaying a calendar for date selection (e.g., January 8, 2025) and available time slots for booking chargers at a station.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/BookingReservationTimeSlots.jpg",
+      src: "./ProjectPics/EvChargingStation/BookingReservationTimeSlots.jpg",
       alt: "Booking Reservation with Time Slot Selection",
       caption:
         "The booking reservation interface where users select a date, a specific charger (e.g., 'Charger charger2'), and view available time slots for their charging session.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/ForgotPasswordScreen.jpg",
+      src: "./ProjectPics/EvChargingStation/ForgotPasswordScreen.jpg",
       alt: "Forgot Password Screen",
       caption:
         "The 'Forgot Your Password?' screen, enabling users to reset their password by entering their registered email address to receive a reset link.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/AnalyticsDashboard.jpg",
+      src: "./ProjectPics/EvChargingStation/AnalyticsDashboard.jpg",
       alt: "Analytics Dashboard with Peak Charging Times and Energy Consumption",
       caption:
         "The Analytics Dashboard providing insights into usage patterns, including a bar chart for peak charging times and a line graph illustrating energy consumption trends.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/ChargingPortDetails.jpg",
+      src: "./ProjectPics/EvChargingStation/ChargingPortDetails.jpg",
       alt: "Charging Port Details Screen",
       caption:
         "The Charging Port Details screen showing the physical location of a charging station (e.g., '29 Sparsholt Road, Barking, United Kingdom') and the number of total bookings for each individual charger.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/MapChargerLocations.jpg",
+      src: "./ProjectPics/EvChargingStation/MapChargerLocations.jpg",
       alt: "Map View of Charger Locations",
       caption:
         "A map interface displaying multiple charger locations (indicated by pins) in a geographical area (e.g., New York), allowing users to visually identify nearby charging stations.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/CreateAccountForm.jpg",
+      src: "./ProjectPics/EvChargingStation/CreateAccountForm.jpg",
       alt: "Create Account Registration Form",
       caption:
         "The 'Create Account' registration form, prompting users to enter their full name, email address, phone number, and desired password to register for the service.",
     },
     {
-      src: "/ProjectPics/EvChargingStation/HomePage.jpg",
+      src: "./ProjectPics/EvChargingStation/HomePage.jpg",
     },
     {
-      src: "/ProjectPics/EvChargingStation/NavBar.jpg",
+      src: "./ProjectPics/EvChargingStation/NavBar.jpg",
     },
     {
-      src: "/ProjectPics/EvChargingStation/Payments.jpg",
+      src: "./ProjectPics/EvChargingStation/Payments.jpg",
     },
   ],
   7: [
     // 2D Platform Game with mixed media
     {
-      src: "/ProjectPics/2DPlatform/GamepicL1.png",
+      src: "./ProjectPics/2DPlatform/GamepicL1.png",
       alt: "2D Platform Game Level 1",
       caption:
         "First level of the 2D platform game, showcasing the initial environment and obstacles.",
@@ -157,13 +157,13 @@ export const projectImages = {
         "Second level of the 2D platform game, featuring new challenges and environments.",
     },
     {
-      src: "/ProjectPics/2DPlatform/GamepicL3.png",
+      src: "./ProjectPics/2DPlatform/GamepicL3.png",
       alt: "2D Platform Game Level 3",
       caption:
         "Third level of the 2D platform game, introducing advanced mechanics and obstacles.",
     },
     {
-      src: "/ProjectPics/2DPlatform/GameVideo.mp4",
+      src: "./ProjectPics/2DPlatform/GameVideo.mp4",
       alt: "2D Platform Game Video",
       caption:
         "Video showcasing the gameplay mechanics, character movements, and level design of the 2D platform game.",
@@ -172,7 +172,7 @@ export const projectImages = {
 
   12: [
     {
-      src: "/ProjectPics/LancastersWebsite/VideoWalkthrough.mp4",
+      src: "./ProjectPics/LancastersWebsite/VideoWalkthrough.mp4",
       alt: "Lancaster's Restaurant Video Walkthrough",
       caption:
         "Video walkthrough showcasing the features and functionality of Lancaster's Restaurant reservation system.",
@@ -181,7 +181,7 @@ export const projectImages = {
 
   14: [
     {
-      src: "/ProjectPics/SecurityAudit/JuiceShopVideo.mp4",
+      src: "./ProjectPics/SecurityAudit/JuiceShopVideo.mp4",
       alt: "OWASP Juice Shop Security Evaluation Video",
       caption:
         "Video walkthrough showcasing the findings of the 10 challenges from the OWASP Juice Shop security evaluation.",
@@ -192,31 +192,31 @@ export const projectImages = {
     // AirViva project images
     // Admin Modules
     {
-      src: "/ProjectPics/AirViva/AdminRefundsInitial.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminRefundsInitial.jpg", // Changed to .jpg
       alt: "AirViva Admin - Refunds Initial Screen",
       caption:
         "Initial screen for administrators to manage and process refunds within the AirViva system.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminMainMenu.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminMainMenu.jpg", // Changed to .jpg
       alt: "AirViva Admin Home Page - Main Menu",
       caption:
         "The main menu for AirViva administrators, providing navigation to various management functions.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminBackUp.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminBackUp.jpg", // Changed to .jpg
       alt: "AirViva Admin - Backup Utility",
       caption:
         "Utility for administrators to perform system backups, ensuring data integrity for AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminCommisonRates.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminCommisonRates.jpg", // Changed to .jpg
       alt: "AirViva Admin - Commission Rates Configuration",
       caption:
         "Interface for administrators to configure and adjust commission rates for sales in AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminCreateUserAccount.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminCreateUserAccount.jpg", // Changed to .jpg
       alt: "AirViva Admin - Create User Account",
       caption:
         "Screen allowing administrators to create new user accounts within the AirViva system.",
@@ -227,108 +227,108 @@ export const projectImages = {
       caption: "View and manage detailed information about AirViva customers.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminLogIn.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminLogIn.jpg", // Changed to .jpg
       alt: "AirViva Admin Login Page",
       caption: "Secure login interface for AirViva administrators.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminRestore.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminRestore.jpg", // Changed to .jpg
       alt: "AirViva Admin - Restore Utility",
       caption:
         "Utility for administrators to restore AirViva system data from previous backups.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminStock.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminStock.jpg", // Changed to .jpg
       alt: "AirViva Admin - Stock Management",
       caption:
         "Module for administrators to manage and monitor stock levels within AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdminUserDetails.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdminUserDetails.jpg", // Changed to .jpg
       alt: "AirViva Admin - User Details Management",
       caption:
         "Detailed management of user information and profiles in AirViva.",
     },
     // Advisor Modules
     {
-      src: "/ProjectPics/AirViva/AdvisorEarnedCommission.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorEarnedCommission.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Earned Commission",
       caption:
         "Initial screen for AirViva advisors to view their earned commissions.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorHomePage.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorHomePage.jpg", // Changed to .jpg
       alt: "AirViva Advisor Home Page",
       caption:
         "The home page for AirViva advisors, providing an overview of their tasks and information.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorLogIn.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorLogIn.jpg", // Changed to .jpg
       alt: "AirViva Advisor Login Page",
       caption: "Login interface for AirViva advisors.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorRefunds.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorRefunds.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Refund Processing",
       caption:
         "Process and manage refunds through the AirViva advisor interface.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorStock.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorStock.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Stock View",
       caption:
         "Advisors' interface to view current stock or inventory status in AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/AdvisorTicketSales.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/AdvisorTicketSales.jpg", // Changed to .jpg
       alt: "AirViva Advisor - Ticket Sales",
       caption:
         "Module for AirViva advisors to manage and process ticket sales.",
     },
     // Office Manager Modules
     {
-      src: "/ProjectPics/AirViva/OfficeManagerBlanks.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerBlanks.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Blanks Initial",
       caption:
         "Initial screen for Office Managers to manage ticket blanks or similar inventory.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerDiscountPlan.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerDiscountPlan.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Discount Plan Configuration",
       caption:
         "Interface for Office Managers to configure and manage discount plans for AirViva services.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerDomesticSalesReport.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerDomesticSalesReport.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Domestic Sales Report",
       caption:
         "Comprehensive report showing domestic sales performance for AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerHomePage.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerHomePage.jpg", // Changed to .jpg
       alt: "AirViva Office Manager Home Page",
       caption:
         "The home page for AirViva Office Managers, providing an overview of key operations.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerInterlineSalesReport.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerInterlineSalesReport.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Interline Sales Report",
       caption:
         "Detailed report showing interline sales performance across the AirViva network.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerLogIn.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerLogIn.jpg", // Changed to .jpg
       alt: "AirViva Office Manager Login Page",
       caption: "Login interface for AirViva Office Managers.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerStock.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerStock.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Stock Initial View",
       caption:
         "Initial view for Office Managers to manage inventory and stock for AirViva.",
     },
     {
-      src: "/ProjectPics/AirViva/OfficeManagerTicketStockTurnoverReport.jpg", // Changed to .jpg
+      src: "./ProjectPics/AirViva/OfficeManagerTicketStockTurnoverReport.jpg", // Changed to .jpg
       alt: "AirViva Office Manager - Ticket Stock Turnover Report",
       caption:
         "Report detailing the turnover rate of ticket stock for AirViva Office Managers.",
