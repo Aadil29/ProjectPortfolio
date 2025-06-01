@@ -147,25 +147,25 @@ export const projectImages = {
   7: [
     // 2D Platform Game with mixed media
     {
-      src: "/ProjectPics/2DPlatform/GamepicL1.png",
+      src: "./ProjectPics/2DPlatform/GamepicL1.png",
       alt: "2D Platform Game Level 1",
       caption:
         "First level of the 2D platform game, showcasing the initial environment and obstacles.",
     },
     {
-      src: "/ProjectPics/2DPlatform/GamepicL2.png",
+      src: "./ProjectPics/2DPlatform/GamepicL2.png",
       alt: "2D Platform Game Level 2",
       caption:
         "Second level of the 2D platform game, featuring new challenges and environments.",
     },
     {
-      src: "/ProjectPics/2DPlatform/GamepicL3.png",
+      src: "./ProjectPics/2DPlatform/GamepicL3.png",
       alt: "2D Platform Game Level 3",
       caption:
         "Third level of the 2D platform game, introducing advanced mechanics and obstacles.",
     },
     {
-      src: "/ProjectPics/2DPlatform/GameVideo.mp4",
+      src: "./ProjectPics/2DPlatform/GameVideo.mp4",
       alt: "2D Platform Game Video",
       caption:
         "Video showcasing the gameplay mechanics, character movements, and level design of the 2D platform game.",
@@ -174,7 +174,7 @@ export const projectImages = {
 
   12: [
     {
-      src: "/ProjectPics/LancastersWebsite/VideoWalkthrough.mp4",
+      src: "./ProjectPics/LancastersWebsite/VideoWalkthrough.mp4",
       alt: "Lancaster's Restaurant Video Walkthrough",
       caption:
         "Video walkthrough showcasing the features and functionality of Lancaster's Restaurant reservation system.",
@@ -183,7 +183,7 @@ export const projectImages = {
 
   14: [
     {
-      src: "/ProjectPics/SecurityAudit/JuiceShopVideo.mp4",
+      src: "./ProjectPics/SecurityAudit/JuiceShopVideo.mp4",
       alt: "OWASP Juice Shop Security Evaluation Video",
       caption:
         "Video walkthrough showcasing the findings of the 10 challenges from the OWASP Juice Shop security evaluation.",
