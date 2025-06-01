@@ -2,50 +2,50 @@ export const projectImages = {
   1: [
     // Audio Deepfake Detection System
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionDecision.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionDecision.png",
       alt: "Audio Deepfake Detection Interface showing a .wav file uploaded and detected as BONAFIDE",
       caption:
         "Main detection interface where users can upload a .wav file for deepfake detection. The result for the uploaded file 'LA_E_1001976.wav' is shown as 'BONAFIDE'.",
     },
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionStats.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/DeepfakeDetectionStats.png",
       alt: "Deepfake Detection Statistics popup showing total uploads, bonafide, and spoof counts",
       caption:
         "Deepfake Detection Statistics panel displaying metrics such as total uploads, and the count of bonafide and spoof detections, all currently at zero.",
     },
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/SignUpFormOtpSentAfterSignUpButton.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/SignUpFormOtpSentAfterSignUpButton.png",
       alt: "Sign Up form with email, password, voice registration completed, and OTP input",
       caption:
         "Sign Up form showing fields for email and password, with voice registration completed. An OTP has been sent to the registered email for verification.",
     },
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/SignInFormPassessAllChecks.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/SignInFormPassessAllChecks.png",
       alt: "Voice Authentication during sign in passing passphrase match, similarity, and deepfake checks",
       caption:
         "Voice Authentication during sign-in, requiring the user to say a specific phrase. The system has successfully matched the passphrase, achieved a high similarity score, and confirmed the audio is not a deepfake.",
     },
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/SignInVoiceIdBeforeRecording.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/SignInVoiceIdBeforeRecording.png",
       alt: "Voice Authentication during sign in before recording",
       caption:
         "Voice Authentication prompt during sign-in, instructing the user to clearly say a given phrase before starting the recording.",
     },
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/SignUpFormListenToSample2Recording.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/SignUpFormListenToSample2Recording.png",
       alt: "Voice Registration for sign up, listening to sample 2",
       caption:
         "Voice Registration during sign-up, presenting the second of three samples to be spoken. Users can re-record or proceed to the next sample.",
     },
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/SignUpFormVoiceRegSample3BeforeRecord.png",
+      src: "./ProjectPics/AudioDeepFakeDetection/SignUpFormVoiceRegSample3BeforeRecord.png",
       alt: "Voice Registration for sign up, sample 3 before recording",
       caption:
         "Voice Registration during sign-up, showing the third and final sample phrase to be recorded before completing the voice registration process.",
     },
 
     {
-      src: "/ProjectPics/AudioDeepFakeDetection/AudioDeepfakeVideo.mp4",
+      src: "./ProjectPics/AudioDeepFakeDetection/AudioDeepfakeVideo.mp4",
       alt: "Video demonstration of the Audio Deepfake Detection System in action",
       caption:
         "Video walkthrough showcasing the deepfake detection dashboard, including audio upload, analysis, and real-time classification of bona fide or spoofed audio files.",
