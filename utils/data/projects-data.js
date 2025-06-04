@@ -251,17 +251,6 @@ export const projectsData = [
   },
 
   {
-    id: 7,
-    name: "Java 2D Platform Game",
-    description:
-      "Created a 2D platformer game in Java, utilising object-oriented programming for smooth gameplay mechanics. Integrated collision detection, levels, soundtracks selection, menus and score tracking, enhancing the player experience.",
-    tools: ["Java", "Java Swing"],
-    role: "Developer",
-    code: "", // No code link provided
-    demo: "", // No demo link provided
-  },
-
-  {
     id: 15,
     name: "Network Security Investigation and Web Application Vulnerability Analysis",
     description:
@@ -283,6 +272,17 @@ export const projectsData = [
     role: "Security Analyst / Penetration Tester",
     code: "",
     demo: "",
+  },
+
+  {
+    id: 7,
+    name: "Java 2D Platform Game",
+    description:
+      "Created a 2D platformer game in Java, utilising object-oriented programming for smooth gameplay mechanics. Integrated collision detection, levels, soundtracks selection, menus and score tracking, enhancing the player experience.",
+    tools: ["Java", "Java Swing"],
+    role: "Developer",
+    code: "", // No code link provided
+    demo: "", // No demo link provided
   },
 ];
 
