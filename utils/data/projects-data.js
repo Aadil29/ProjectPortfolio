@@ -260,6 +260,30 @@ export const projectsData = [
     code: "", // No code link provided
     demo: "", // No demo link provided
   },
+
+  {
+    id: 15,
+    name: "Network Security Investigation and Web Application Vulnerability Analysis",
+    description:
+      "Conducted in-depth network security investigations, focusing on web application vulnerabilities. Exploited and analyzed SQL injection and Cross-Site Scripting (XSS) vulnerabilities (Reflected, Stored, and DOM-based) on the Damn Vulnerable Web Application (DVWA) server across low, medium, and high-security configurations. Demonstrated various exploitation techniques, including union-based SQL injection, bypassing script tag filtering, and leveraging onerror events. Successfully retrieved sensitive data like hashed passwords and user cookies. Implemented social engineering techniques by setting up a temporary HTTP server to capture user cookies. Additionally, performed analysis to identify and clean malware behavior from IoT EndUser devices. The methodology followed principles akin to Advanced Persistent Threats (APT) for thorough system exploration and exploitation.",
+    tools: [
+      "Kali Linux",
+      "MySQL",
+      "Wireshark",
+      "DVWA (Damn Vulnerable Web Application)",
+      "Python",
+      "Web Browser Developer Tools",
+      "SQL",
+      "JavaScript",
+      "Burp Suite",
+      "Nmap",
+      "Metasploit Framework",
+      "IoT Security Analysis Tools",
+    ],
+    role: "Security Analyst / Penetration Tester",
+    code: "",
+    demo: "",
+  },
 ];
 
 // Do not remove any property.

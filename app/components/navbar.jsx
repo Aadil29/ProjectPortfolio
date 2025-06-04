@@ -105,7 +105,7 @@ function Navbar() {
   const projectCategories = {
     "AI & Machine Learning": [1, 2, 3], // Audio Deepfake, MNIST, Smoking Detection
     "Full-Stack Development": [5, 12, 6, 4], // Netflix Clone (DevSecOps), EV Charging, Air Ticketing, Lancaster's Restaurant
-    "Cybersecurity & Forensics": [14, 8, 9, 10, 11, 13], // OWASP Juice Shop, Cyber Risk Analysis, Network Security, Digital Forensics, Incident Response, Security Audit
+    "Cybersecurity & Forensics": [14, 8, 9, 10, 11, 13, 15], // OWASP Juice Shop, Cyber Risk Analysis, Network Security, Digital Forensics, Incident Response, Security Audit
     "Game Development": [7], // Java 2D Platform Game
   };
 
