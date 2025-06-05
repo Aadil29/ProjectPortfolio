@@ -24,9 +24,9 @@ function HeroSection() {
             {/* Primary Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                <span className="block">Hello,</span>
+                <span className="block">Hi,</span>
                 <span className="block">
-                  This is{" "}
+                  I'm{" "}
                   <span className="text-blue-500 bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent">
                     {personalData.name}
                   </span>
@@ -34,7 +34,7 @@ function HeroSection() {
               </h1>
 
               <div className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-200 leading-relaxed">
-                <span>I'm a Professional </span>
+                <span></span>
                 <span className="text-[#16f2b3] bg-gradient-to-r from-[#16f2b3] to-emerald-400 bg-clip-text text-transparent font-semibold">
                   {personalData.designation}
                 </span>

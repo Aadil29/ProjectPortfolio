@@ -10,83 +10,68 @@ function Navbar() {
 
   // Fix Issue 2: Prevent background scrolling when mobile menu is open
   useEffect(() => {
+    // Store the original overflow and position to restore them correctly
+    const originalOverflow = document.body.style.overflow;
+    const originalPosition = document.body.style.position;
+    const originalTop = document.body.style.top;
+    const originalWidth = document.body.style.width;
+    let scrollY = window.scrollY; // Store scroll position when locking
+
     if (isMobileMenuOpen) {
-      // Prevent scrolling
       document.body.style.overflow = "hidden";
       document.body.style.position = "fixed";
-      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.top = `-${scrollY}px`;
       document.body.style.width = "100%";
     } else {
-      // Restore scrolling
-      const scrollY = document.body.style.top;
-      document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-      if (scrollY) {
-        window.scrollTo(0, parseInt(scrollY || "0") * -1);
+      // Only restore if the mobile menu was actually open
+      if (document.body.style.position === "fixed") {
+        scrollY = parseInt(document.body.style.top || "0") * -1;
       }
+      document.body.style.overflow = originalOverflow;
+      document.body.style.position = originalPosition;
+      document.body.style.top = originalTop;
+      document.body.style.width = originalWidth;
+      window.scrollTo(0, scrollY);
     }
 
     // Cleanup function
     return () => {
-      document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
+      document.body.style.overflow = originalOverflow;
+      document.body.style.position = originalPosition;
+      document.body.style.top = originalTop;
+      document.body.style.width = originalWidth;
     };
   }, [isMobileMenuOpen]);
 
-  // Fix Issue 1: Updated scrollToProject function with better targeting
-  const scrollToProject = (index) => {
-    // Try multiple possible ID patterns for your project containers
-    const possibleIds = [
-      `sticky-card-${index + 1}`,
-      `project-${index}`,
-      `project-${index + 1}`,
-      `card-${index}`,
-      `card-${index + 1}`,
-    ];
-
-    let element = null;
-
-    // Try to find the element with different ID patterns
-    for (const id of possibleIds) {
-      element = document.getElementById(id);
-      if (element) break;
-    }
-
-    // If no element found with ID, try to find by data attribute or class
-    if (!element) {
-      element =
-        document.querySelector(`[data-project-index="${index}"]`) ||
-        document.querySelector(`[data-project-index="${index + 1}"]`) ||
-        document.querySelectorAll(".project-card")[index] ||
-        document.querySelectorAll('[class*="project"]')[index];
-    }
-
-    if (element) {
-      // Add offset to account for fixed navbar
-      const navbarHeight = 80; // Adjust this value based on your navbar height
-      const elementPosition = element.offsetTop - navbarHeight;
-
-      window.scrollTo({
-        top: elementPosition,
+  // FIX: Updated scrollToProject function with correct ID targeting
+  const scrollToProject = (projectId) => {
+    // First scroll to the projects section
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
-    } else {
-      // Fallback: scroll to projects section
-      const projectsSection =
-        document.getElementById("projects") ||
-        document.querySelector('[id*="project"]') ||
-        document.querySelector(".projects-section");
+    }
 
-      if (projectsSection) {
-        projectsSection.scrollIntoView({
+    // Then find and scroll to the specific project
+    const element = document.getElementById(`project-${projectId}`);
+    if (element) {
+      // Add a small delay to ensure the projects section is scrolled first
+      setTimeout(() => {
+        const navbarHeight = 80; // Adjust this value based on your navbar height
+        const elementPosition =
+          element.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+
+        window.scrollTo({
+          top: elementPosition,
           behavior: "smooth",
-          block: "start",
         });
-      }
+      }, 500); // 500ms delay
+    } else {
+      console.warn(`Project with ID ${projectId} not found.`);
     }
 
     // Close mobile menu after navigation
@@ -105,7 +90,7 @@ function Navbar() {
   const projectCategories = {
     "AI & Machine Learning": [1, 2, 3], // Audio Deepfake, MNIST, Smoking Detection
     "Full-Stack Development": [5, 12, 6, 4], // Netflix Clone (DevSecOps), EV Charging, Air Ticketing, Lancaster's Restaurant
-    "Cybersecurity & Forensics": [14, 8, 9, 10, 11, 13, 15], // OWASP Juice Shop, Cyber Risk Analysis, Network Security, Digital Forensics, Incident Response, Security Audit
+    "Cybersecurity & Forensics": [14, 8, 9, 10, 11, 13], // OWASP Juice Shop, Cyber Risk Analysis, Network Security, Digital Forensics, Incident Response, Security Audit
     "Game Development": [7], // Java 2D Platform Game
   };
 
@@ -316,7 +301,9 @@ function Navbar() {
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600 flex items-center gap-1">
                 PROJECTS
                 <svg
-                  className={`w-3 h-3 transition-transform duration-200 ${isProjectsHovered ? "rotate-180" : ""}`}
+                  className={`w-3 h-3 transition-transform duration-200 ${
+                    isProjectsHovered ? "rotate-180" : ""
+                  }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -348,15 +335,16 @@ function Navbar() {
                 </div>
 
                 <div className="space-y-2 max-h-64 overflow-y-auto custom-scrollbar">
-                  {projectsData.map((project, index) => {
+                  {projectsData.map((project) => {
+                    // Removed 'index' from map as it's not needed for `scrollToProject`
                     const category = getProjectCategory(project.id);
                     const categoryColor = getCategoryColor(category);
                     const categoryIcon = getCategoryIcon(category);
 
                     return (
                       <button
-                        key={index}
-                        onClick={() => scrollToProject(index)}
+                        key={project.id} // Use project.id as key for consistency
+                        onClick={() => scrollToProject(project.id)} // Pass project.id
                         className="w-full text-left p-3 rounded-lg bg-[#1a1443]/30 hover:bg-[#1a1443]/60 border border-transparent hover:border-violet-600/30 transition-all duration-200 group"
                       >
                         <div className="flex items-start justify-between gap-3">
@@ -409,6 +397,7 @@ function Navbar() {
                   <Link
                     href="/#projects"
                     className="flex items-center justify-center gap-2 w-full py-2 bg-gradient-to-r from-violet-600/20 to-pink-500/20 border border-violet-600/30 rounded-lg text-[#16f2b3] hover:border-violet-600/50 transition-all duration-200 text-sm font-medium"
+                    onClick={closeMobileMenu} // Close mobile menu when "View All Projects" is clicked
                   >
                     View All Projects
                     <svg
@@ -501,15 +490,18 @@ function Navbar() {
             {/* Mobile Projects List */}
             <div className="w-full max-w-sm">
               <div className="space-y-3 max-h-64 overflow-y-auto custom-scrollbar">
-                {projectsData.slice(0, 20).map((project, index) => {
+                {/* It's usually better to show all projects or implement pagination if there are too many. */}
+                {/* For now, keeping your slice(0, 20) but be aware of the limitation. */}
+                {projectsData.slice(0, 20).map((project) => {
+                  // Removed 'index' from map
                   const category = getProjectCategory(project.id);
                   const categoryColor = getCategoryColor(category);
                   const categoryIcon = getCategoryIcon(category);
 
                   return (
                     <button
-                      key={index}
-                      onClick={() => scrollToProject(index)}
+                      key={project.id} // Use project.id as key for consistency
+                      onClick={() => scrollToProject(project.id)} // Pass project.id
                       className="w-full text-center p-3 rounded-lg bg-[#1a1443]/30 hover:bg-[#1a1443]/60 border border-transparent hover:border-violet-600/30 transition-all duration-200"
                     >
                       <h4 className="text-white text-sm font-medium hover:text-[#16f2b3] transition-colors duration-200">

@@ -1,9 +1,9 @@
 export const experiences = [
   {
     id: 1,
-    title: "Self-Employed",
+    title: "Independent Developer",
     company:
-      "Actively looking for Cybersecurity, AI/ML, and Software Developer/Engineer roles",
+      "Open to new challenges as a Cybersecurity Analyst, Machine Learning Engineer, or Software Engineer.",
     duration: "Present",
   },
 ];
