@@ -17,6 +17,11 @@ body {
   background-color: #0d1224;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 #sticky-card-1 {
   --index: 1;
 }

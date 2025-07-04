@@ -45,9 +45,8 @@ function HeroSection() {
             <div className="space-y-4 max-w-2xl">
               {/* Brief Description */}
               <p className="text-gray-200 text-base md:text-lg leading-relaxed font-light">
-                Passionate about developing robust software solutions,
-                leveraging AI/ML for intelligent systems, and ensuring digital
-                safety with cutting edge cybersecurity approaches
+                Focused on Cyber Security and Artificial Intelligence/Machine
+                Learning
               </p>
             </div>
 
