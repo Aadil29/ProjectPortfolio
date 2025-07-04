@@ -31,11 +31,6 @@ function ProjectCard({ project }) {
 
         {/* Title Bar */}
         <div className="px-4 lg:px-8 py-3 lg:py-4 relative bg-[#0a0d37]/50">
-          <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
-            <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
-            <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
-            <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
-          </div>
           <h3 className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl font-semibold break-words">
             {project.name}
           </h3>
