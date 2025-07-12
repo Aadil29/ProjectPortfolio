@@ -24,9 +24,9 @@ function HeroSection() {
             {/* Primary Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                <span className="block">Hi,</span>
+                <span className="block">Hi,I'm</span>
                 <span className="block">
-                  I'm{" "}
+                  {" "}
                   <span className="text-blue-500 bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent">
                     {personalData.name}
                   </span>
