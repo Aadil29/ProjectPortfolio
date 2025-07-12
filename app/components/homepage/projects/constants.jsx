@@ -78,12 +78,7 @@ export const projectImages = {
       caption:
         "The Analytics Dashboard providing insights into usage patterns, including a bar chart for peak charging times and a line graph illustrating energy consumption trends.",
     },
-    {
-      src: "./ProjectPics/EVchargingStation/ChargingPortDetails.jpg",
-      alt: "Charging Port Details Screen",
-      caption:
-        "The Charging Port Details screen showing the physical location of a charging station (e.g., '29 Sparsholt Road, Barking, United Kingdom') and the number of total bookings for each individual charger.",
-    },
+
     {
       src: "./ProjectPics/EVchargingStation/MapChargerLocations.jpg",
       alt: "Map View of Charger Locations",
